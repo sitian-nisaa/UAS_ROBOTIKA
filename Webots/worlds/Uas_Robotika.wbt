@@ -1,0 +1,84 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.11141461858357285 0.3850799282906648 0.916133304488781 0.6118293729525671
+  position -0.6679622004153365 -0.024451771243845406 0.21155592580495616
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+Solid {
+  translation -6.152965078780171e-06 0.19997331986245048 0.049589318602004655
+  rotation 0.9780541658009029 -0.20834972465184956 -0.0006640760485568312 0.00039318030806373644
+  children [
+    Solid {
+      boundingObject Shape {
+        appearance PBRAppearance {
+          baseColor 0 1 0
+          roughness 1
+          metalness 0
+        }
+        geometry Cylinder {
+          height 0.1
+          radius 0.05
+        }
+      }
+      physics Physics {
+      }
+    }
+    DEF ball Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.05
+      }
+    }
+  ]
+  boundingObject USE ball
+  physics Physics {
+  }
+  linearVelocity -1.5464348467948999e-06 -4.966153653149592e-06 1.67624448565018e-07
+  angularVelocity 3.657838241127888e-05 -1.7503806957997295e-05 -3.5320826822448135e-07
+}
+E-puck {
+  hidden position_0_0 28.639952389703158
+  hidden position_0_1 31.454797787224113
+  hidden linearVelocity_0 7.782310972004325e-05 1.6971914112768143e-05 -3.1732677925333523e-07
+  hidden angularVelocity_0 0.0002403202903360309 -1.3780740969645103e-06 0.00011213923939053393
+  hidden rotation_1 0 1 0 3.507211160984812
+  hidden linearVelocity_1 7.485026629865399e-05 1.7006829832411485e-05 5.835964180472806e-06
+  hidden angularVelocity_1 -0.003353009401951242 2.6565952160103867 -0.04527172296607257
+  hidden rotation_2 0 -1 0 6.244314055853409
+  hidden linearVelocity_2 8.07807598320658e-05 1.7125039123300045e-05 -6.4131369605296055e-06
+  hidden angularVelocity_2 -0.003728681698435266 2.926174906511511 -0.04988164873535234
+  translation 0.0011788104332112633 0.5000508493280437 -0.003185205829365736
+  rotation -0.9159925441816923 -0.3938856952197851 0.07623462536654152 0.018640060418963388
+  name "e-puck(1)"
+}
+E-puck {
+  hidden position_0_0 58.76307004124403
+  hidden position_0_1 72.43356759359489
+  hidden linearVelocity_0 0.002672138276464465 -0.0005842588385182299 2.4664511615805187e-07
+  hidden angularVelocity_0 -7.999941131606338e-06 0.00020565085703097 0.2858109866168029
+  hidden rotation_1 0 -0.9999999999999999 0 4.068783030551837
+  hidden linearVelocity_1 0.0016382053524972165 0.006779052889381791 -4.210806727300569e-06
+  hidden angularVelocity_1 0.5470355106149711 0.07717087269347 0.28610683581062407
+  hidden rotation_2 0 -1 0 2.964656092560151
+  hidden linearVelocity_2 0.0036974180569328075 -0.007950388110924227 3.0099298751195856e-06
+  hidden angularVelocity_2 1.2851727931017956 0.18020687981885591 0.2870503474344329
+  translation 0.018616935201854666 0.2847326605610468 -4.789837352975855e-05
+  rotation 0.001776480828209391 0.0019065706118546028 0.99999660454642 -1.427034301114153
+}
